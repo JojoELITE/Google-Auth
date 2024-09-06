@@ -7,14 +7,15 @@ import { createClient } from '@supabase/supabase-js';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 
 const supabase = createClient(
-  "https://ctlqfkiziycvlfmfrojv.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN0bHFma2l6aXljdmxmbWZyb2p2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzIyNzUwMTgsImV4cCI6MTk4Nzg1MTAxOH0.XQEd6PvD9fIjaTSjwGIhuNsYsZ49Xb4ILnjlEYr3Siw" 
+  "https://zhsahtkuzlslxgtyunmy.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpoc2FodGt1emxzbHhndHl1bm15Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU1OTA4OTMsImV4cCI6MjA0MTE2Njg5M30.zYT2Vm7SqkW2DZEWDYN_7bFkhJ-9KtytehRAVS8Ifds"
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <SessionContextProvider supabaseClient={supabase}>
+      
       <App />
     </SessionContextProvider>
   </React.StrictMode>
