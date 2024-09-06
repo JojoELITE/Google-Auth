@@ -29,13 +29,46 @@ function App() {
     <div className="App">
       <div>
         {session ?
-          <>
-            <h2>Hey there {session.user.email}</h2>
-            <button onClick={() => signOut()}>Sign Out</button>
+          <div className='col'>
 
-          </>
+            <div>
+
+
+              <h6>
+                L'engagement de la communauté
+
+              </h6>
+
+              <h3>
+                Eventi est une communauté où quiconque peut trouver sa place
+
+              </h3>
+
+              <p>Afin de maintenir cet engagement, nous vous demandons de bien vouloir consentir à ce qui suit :
+              </p>
+
+              <p>Engageons-nous ensemble à faire preuve de respect envers chaque membre de la communauté Airbnb, quelle que soit sa couleur de peau, sa religion, sa nationalité ou origine, son handicap, son sexe, son identité de genre, son orientation sexuelle ou son âge.
+
+              </p>
+
+              <div>
+
+                <a href='https://eventi-service.vercel.app/addRoom/step01'>
+
+                  Continuer
+
+                </a>
+              </div>
+
+
+
+              <button onClick={() => signOut()}>Sign Out</button>
+
+            </div>
+
+          </div>
           :
-          
+
           <div className=' mx-auto w-full lg:w-1/2 px-0 lg:px-10 py-8 lg:py-10'>
 
             <div className="p-6  mt-8 rounded-3xl border-2 border-gray-100">
